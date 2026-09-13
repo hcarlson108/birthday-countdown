@@ -7,10 +7,52 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <div id="background"></div>
+
     <div id="container">
-        <input id="birthday" type="date">Enter your birthday</input>
-        <button id="submitButton">Submit</button>
+        <h1>Birthday Countdown</h1>
+
+        <form id="birthdayForm">
+            <label for="name">Your name</label>
+            <input id="name" type="text" placeholder="e.g. Hayden" required>
+
+            <label for="birthday">Your birthday</label>
+            <input id="birthday" type="date" required>
+
+            <label for="birthTime">Time you were born <span class="optional">(optional)</span></label>
+            <input id="birthTime" type="time">
+
+            <button id="submitButton" type="submit">Start Countdown</button>
+        </form>
+
+        <div id="countdown" hidden>
+            <p id="greeting"></p>
+            <div id="clock">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+                <div class="time-block">
+                    <span id="milliseconds">000</span>
+                    <small>Ms</small>
+                </div>
+            </div>
+            <button id="resetButton" type="button">Change birthday</button>
+        </div>
     </div>
-    <script src=app.js"></script>
+
+    <script src="app.js"></script>
 </body>
 </html>
