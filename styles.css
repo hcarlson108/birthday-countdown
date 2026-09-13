@@ -142,3 +142,22 @@ button:hover {
     text-transform: uppercase;
     opacity: 0.8;
 }
+
+#siteFooter {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0.75rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+#siteFooter a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#siteFooter a:hover {
+    color: #fff;
+}

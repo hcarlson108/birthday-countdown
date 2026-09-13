@@ -56,7 +56,7 @@ function tick(name, month, day, hour, minute) {
     // getNextBirthday only rolls forward to next year once today's birthday
     // has fully elapsed, so a non-positive diff here means "today is the day".
     if (diff <= 0) {
-        greetingEl.textContent = `🎉 Happy Birthday, ${name}! 🎉`;
+        greetingEl.textContent = `HAPPY BIRTHDAY ${name}! 🎉`;
         [daysEl, hoursEl, minutesEl, secondsEl].forEach((el) => (el.textContent = '00'));
         millisecondsEl.textContent = '000';
         return;
