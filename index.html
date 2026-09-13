@@ -10,11 +10,11 @@
     <div id="background"></div>
 
     <div id="container">
-        <h1>Birthday Countdown</h1>
+        <h1 id="pageTitle">Birthday Countdown</h1>
 
         <form id="birthdayForm">
             <label for="name">Your name</label>
-            <input id="name" type="text" placeholder="e.g. Hayden" required>
+            <input id="name" type="text" placeholder="name" required>
 
             <label for="birthday">Your birthday</label>
             <input id="birthday" type="date" required>
@@ -27,6 +27,7 @@
 
         <div id="countdown" hidden>
             <p id="greeting"></p>
+            <p id="ageInfo"></p>
             <div id="clock">
                 <div class="time-block">
                     <span id="days">00</span>
@@ -49,6 +50,7 @@
                     <small>Ms</small>
                 </div>
             </div>
+            <p id="monthsWeeks"></p>
             <button id="resetButton" type="button">Change birthday</button>
         </div>
     </div>
